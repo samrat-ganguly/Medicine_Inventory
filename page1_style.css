@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root{
+    --green:#16a085;
+    --black:#444;
+    --box-shadow:5rem .5rem 0 rgba(22,160,132,.2);
+    --text-shadow:4rem .4rem 0 rgba(0,0,0,.2);
+    --border:.2rem solid var(--green);
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    cursor:default;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+
+/* Header Section */
+.header .navbar{
+    padding:15px;
+    position:fixed;
+    box-shadow:0 5px 10px rgba(0,0,0,.1);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #fff;
+    width:100vw;
+    border-radius: 5rem;
+    z-index: 1000;
+}
+
+.header .navbar .icon{
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    gap :20px;
+    color: var(--green);
+}
+
+.header .navbar .logo{
+    font-size: 3rem !important;
+    color: var(--green);
+    animation: beat 1s infinite;
+}
+@keyframes beat{
+    0%{
+        transform:scale(100%);
+    }
+    50%{
+        transform: scale(120%);
+    }
+    100%{
+        transform:scale(100%);
+    }
+}
+
+.header .navbar .nametag a{
+    border: var(--border);
+    border-radius: 2rem;
+    font-size: 2rem;
+    color: green;
+    padding:0 15px;
+    transition:0.5s;
+    cursor:pointer;
+}
+.header .navbar .nametag a:hover{
+    background: var(--green);
+    color:#fff;
+}
+/* End Header Section */
+
+/* Hero Section */
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position:relative;
+    margin:auto ;
+    padding-top:120px;
+}
+
+.hero .requirements{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap:10px;
+}
+
+.hero .requirements #email{
+    width:30rem;
+    height:5rem;
+    text-align: center;
+    border-radius: 20rem;
+    border-color: var(--green);
+}
+.hero .requirements #password{
+    width:30rem;
+    height:5rem;
+    text-align: center;
+    border-radius: 20px;
+    border-color: var(--green);
+}
+.hero .requirements #submit{
+    width:20rem;
+    height:5rem;
+    background:var(--green);
+    border-radius: 20rem;
+    border-color: var(--green);
+    cursor:pointer;
+    font-weight: 700;
+    color:#fff;
+    transition:.5s;
+}
+.hero .requirements #submit:hover{
+    font-size: 1.75rem;
+    font-weight: 700;
+    color:#fff;
+}
+
+.footer{
+    padding:15px;
+    position:fixed;
+    box-shadow:5px 0px 10px rgba(0,0,0,.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    left:0;
+    right:0;
+    bottom:0;
+    border-radius: 5rem 5rem 0 0;
+    z-index: 1000;
+}
+
+.footer .details{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    gap: 3rem;
+}
+
+.footer .details .logo{
+    font-size:2rem;
+    color:var(--green);
+}
+
+.footer .details .email{
+    text-align: center;
+}
